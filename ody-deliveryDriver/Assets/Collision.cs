@@ -9,6 +9,9 @@ public class Collision : MonoBehaviour
         Debug.Log("I'm Walking over here");
         
     }
-    
+    void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("watch where you going");
+        
+    }
  }
 
