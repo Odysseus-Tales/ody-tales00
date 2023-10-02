@@ -647,7 +647,7 @@ Transform:
   m_GameObject: {fileID: 1494440812}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.06, y: -0.18, z: -0.1903358}
+  m_LocalPosition: {x: 48.9, y: 0.4, z: -0.1903358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1393,8 +1393,9 @@ GameObject:
   - component: {fileID: 1893887362}
   - component: {fileID: 1893887359}
   - component: {fileID: 1893887363}
-  - component: {fileID: 1893887364}
+  - component: {fileID: 1893887367}
   - component: {fileID: 1893887365}
+  - component: {fileID: 1893887366}
   m_Layer: 0
   m_Name: John
   m_TagString: Player
@@ -1481,7 +1482,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.51}
   m_Size: {x: 2.99, y: 0.3}
   m_Direction: 1
---- !u!58 &1893887364
+--- !u!114 &1893887365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893887358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5132ebb01e58d945896da4f63eb863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 10
+--- !u!114 &1893887366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893887358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0ac2b9a5a9df14ab2ef8c73d50656c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &1893887367
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1510,25 +1536,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.44, y: 1.1}
+  m_Offset: {x: 0.42, y: 1.1}
   serializedVersion: 2
-  m_Radius: 0.34
---- !u!114 &1893887365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893887358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5132ebb01e58d945896da4f63eb863e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  torqueAmount: 10
+  m_Radius: 0.44
 --- !u!1 &1912739546
 GameObject:
   m_ObjectHideFlags: 0
